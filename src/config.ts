@@ -2,10 +2,10 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://cristianespinosa.com/",
-  textLogo: "CE",
+  textLogo: "WebConexxion",
   author: "Cristian Espinosa",
   desc: "Diseño y desarrollo web, aplicaciones web, sistemas personalizados en Quito - Ecuador",
-  title: "Cristian Espinosa",
+  title: "WebConexxion",
   ogImage: "astropaper-og.jpg", 
   lightAndDarkMode: true,
   postPerPage: 6,
@@ -35,25 +35,25 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://instagram.com/web.conexxion",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "#",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:cristian.espinosah@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
   {
     name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "#",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
@@ -71,7 +71,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "WhatsApp",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "#",
     linkTitle: `${SITE.title} on WhatsApp`,
     active: true,
   },
@@ -133,7 +133,7 @@ export const SOCIALS: SocialObjects = [
     name: "Telegram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Telegram`,
-    active: true,
+    active: false,
   },
   {
     name: "Mastodon",

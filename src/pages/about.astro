@@ -1,0 +1,15 @@
+---
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import { SITE } from "@config";
+---
+
+<Layout title={`Acerca de | ${SITE.title}`}>
+  <Header activeNav="projects" />
+  <Main pageTitle="Acerca de" pageDesc="Todo acerca de webconexxion.">
+
+  </Main>
+  <Footer />
+</Layout>
