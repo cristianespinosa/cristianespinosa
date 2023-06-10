@@ -2,10 +2,10 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://cristianespinosa.com/",
-  textLogo: "WebConexxion",
+  textLogo: "CE",
   author: "Cristian Espinosa",
   desc: "Diseño y desarrollo web, aplicaciones web, sistemas personalizados en Quito - Ecuador",
-  title: "WebConexxion",
+  title: "Cristian Espinosa",
   ogImage: "astropaper-og.jpg", 
   lightAndDarkMode: true,
   postPerPage: 6,
