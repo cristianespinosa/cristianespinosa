@@ -35,13 +35,13 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/web.conexxion",
+    href: "https://instagram.com/cristianespinosadev",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
   {
     name: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/cristianespinosa/",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
@@ -53,7 +53,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Twitter",
-    href: "#",
+    href: "https://twitter.com/cristiangeh",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
