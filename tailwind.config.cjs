@@ -57,9 +57,6 @@ module.exports = {
       },
       transparent: "transparent",
     },
-    fontFamily: {
-      'sans': 'Roboto, Arial, sans-serif',
-    },
     // },
   },
   plugins: [require("@tailwindcss/typography")],
