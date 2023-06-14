@@ -1,13 +1,13 @@
 ---
-author: Sat Naing
-pubDatetime: 2023-01-30T15:57:52.737Z
-title: AstroPaper 2.0
-postSlug: astro-paper-2
+author: Cristian Espinosa
+pubDatetime: 2023-06-14T11:27:52.737Z
+title: ¡Bienvenidos a mi blog de desarrollo web!
+postSlug: bienvenidos-blog-desarrollo-web
 featured: true
-ogImage: https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png
+ogImage: 
 tags:
-  - release
-description: AstroPaper with the enhancements of Astro v2. Type-safe markdown contents, bug fixes and better dev experience etc.
+  - desarrollo web
+description: En este espacio virtual, encontrarás todo lo que necesitas saber sobre el fascinante mundo del desarrollo web.
 ---
 
 Astro 2.0 has been released with some cool features, breaking changes, DX improvements, better error overlay and so on. AstroPaper takes advantage of those cool features, especially Content Collections API.
