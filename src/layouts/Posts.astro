@@ -25,11 +25,11 @@ const next = pageNum < totalPages ? "" : "disabled";
   <Header activeNav="posts" />
   <Main pageTitle="Posts" pageDesc="Todos los artículos que he publicado.">
     <ul>
-      {/*
+      {
         posts.map(({ data }) => (
           <Card href={`/posts/${slugify(data)}`} frontmatter={data} />
         ))
-      */}
+      }
     </ul>
   </Main>
 
