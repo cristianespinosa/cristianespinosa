@@ -29,6 +29,7 @@
     "@astrojs/react": "^2.1.3",
     "@astrojs/sitemap": "^1.3.1",
     "@astrojs/tailwind": "^3.1.2",
+    "@astrojs/partytown": "^1.2.3",
     "@divriots/jampack": "^0.11.2",
     "@tailwindcss/typography": "^0.5.9",
     "@types/github-slugger": "^1.3.0",
