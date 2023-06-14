@@ -8,5 +8,11 @@ const { noPadding = false, ariaHidden = true } = Astro.props;
 ---
 
 <div class={`max-w-6xl mx-auto ${noPadding ? "px-0" : "px-4"}`}>
-  <hr class="border-skin-line" aria-hidden={ariaHidden} />
+  <hr class="linea h-px border-0 bg-[#eee]" aria-hidden={ariaHidden} />
 </div>
+
+<style>
+    html[data-theme="dark"] .linea {
+      @apply h-px border-0 bg-gradient-to-r from-blue-800 to-pink-500;
+    }  
+</style>

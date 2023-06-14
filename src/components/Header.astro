@@ -17,20 +17,22 @@ const { activeNav } = Astro.props;
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
     <div class="top-nav-wrap">
-      <a href="/" class="logo">
-        {
-          LOGO_IMAGE.enable ? (
-            <img
-              src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
-              alt="AstroPaper Logo"
-              width={LOGO_IMAGE.width}
-              height={LOGO_IMAGE.height}
-            />
-          ) : (
-            SITE.textLogo
-          )
-        }
-      </a>
+      <div class="bg-logo">
+        <a href="/" class="logo">
+          {
+            LOGO_IMAGE.enable ? (
+              <img
+                src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
+                alt="AstroPaper Logo"
+                width={LOGO_IMAGE.width}
+                height={LOGO_IMAGE.height}
+              />
+            ) : (
+              SITE.textLogo
+            )
+          }
+        </a>
+      </div>
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
@@ -79,12 +81,11 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <LinkButton
+            <a
               href="/search"
-              className={`focus-outline p-3 sm:p-1 ${
+              class={`focus-outline p-3 sm:p-1 ${
                 activeNav === "search" ? "active" : ""
               }`}
-              ariaLabel="search"
               title="Search"
             >
               <svg
@@ -94,7 +95,7 @@ const { activeNav } = Astro.props;
                   d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
                 ></path>
               </svg>
-            </LinkButton>
+            </a>
           </li>
           <li>
             {
@@ -127,7 +128,8 @@ const { activeNav } = Astro.props;
   #skip-to-content { @apply absolute -top-full left-16 z-50 bg-skin-accent py-2 px-3 text-skin-inverted transition-all focus:top-4; }
   .nav-container { @apply mx-auto flex flex-col items-center justify-between sm:flex-row max-w-6xl; }
   .top-nav-wrap { @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8; }
-  .logo { @apply absolute p-3 bg-gradient-to-r from-blue-800 to-pink-500 text-[#fff] text-xl rounded-md font-semibold sm:static sm:text-2xl; }
+  .bg-logo {  @apply relative before:content-[''] before:absolute before:w-14 before:h-12 before:backdrop-blur-sm before:bg-[#fff]/10 before:z-0 before:rounded-md before:left-0 before:top-[-8px] before:rotate-6; }
+  .bg-logo .logo { @apply px-2 py-1 ms-1 bg-gradient-to-r from-blue-800 to-pink-500 text-[#fff] text-xl rounded-md font-semibold sm:text-2xl z-10 relative; }
   .hamburger-menu { @apply self-end p-2 sm:hidden; }
   .hamburger-menu svg { @apply h-6 w-6 scale-125 fill-skin-base; }
   nav { @apply flex w-full flex-col items-center bg-skin-fill sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0; }
