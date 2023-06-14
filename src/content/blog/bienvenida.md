@@ -4,7 +4,7 @@ pubDatetime: 2023-06-14T11:27:52.737Z
 title: ¡Bienvenidos a mi blog de desarrollo web!
 postSlug: bienvenidos-blog-desarrollo-web
 featured: true
-ogImage: 
+<!-- ogImage: -->
 tags:
   - desarrollo web
 description: En este espacio virtual, encontrarás todo lo que necesitas saber sobre el fascinante mundo del desarrollo web.
