@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>{ SITE.title }</h1>
+      <h1>{SITE.title}</h1>
       <!--a target="_blank" href="/rss.xml" class="rss-link" aria-label="rss feed" title="RSS Feed" >
         <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
           ><path
@@ -33,11 +33,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg> 
       </a-->
-      <p> 
-        Freelance especializado en desarrollo de software, comprometido en brindar soluciones personalizadas y de calidad para impulsar tu proyecto. Con amplia experiencia y pasión por la tecnología, te ofrezco servicios profesionales para convertir tus ideas en software funcional y exitoso.
+      <p>
+        Freelance especializado en desarrollo de software, comprometido en
+        brindar soluciones personalizadas y de calidad para impulsar tu
+        proyecto. Con amplia experiencia y pasión por la tecnología, te ofrezco
+        servicios profesionales para convertir tus ideas en software funcional y
+        exitoso.
       </p>
       <p>
-        Comprometido con el aprendizaje constante y el crecimiento profesional en un campo en constante evolución.
+        Comprometido con el aprendizaje constante y el crecimiento profesional
+        en un campo en constante evolución.
       </p>
       {
         // only display if at least one social link is enabled
@@ -53,12 +58,27 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <h2>Servicios</h2>
       <div class="lista">
         <div class="web">
+          <img
+            src="/assets/iconos/tablet.png"
+            alt="Desarrollo de siitos web responsive"
+            class="mx-auto"
+          />
           <h3>Desarrollo web</h3>
         </div>
         <div class="apps">
+          <img
+            src="/assets/iconos/computer.png"
+            alt="Desarrollo de sistemas y aplicaciones web personalizadas"
+            class="mx-auto"
+          />
           <h3>Sistemas personalizados</h3>
         </div>
         <div class="seo">
+          <img
+            src="/assets/iconos/rocket.png"
+            alt="Optimización de sitios web - SEO"
+            class="mx-auto"
+          />
           <h3>Optimización web</h3>
         </div>
       </div>
@@ -83,37 +103,59 @@ const socialCount = SOCIALS.filter(social => social.active).length;
               )
           )
         }
-      </ul
-      <div class="all-posts-btn-wrapper">
-        <LinkButton href="/posts">
-          Ver todos
-          <svg xmlns="http://www.w3.org/2000/svg"
-            ><path
-              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-            ></path>
-          </svg>
-        </LinkButton>
-      </div>
+      </ul>
+      <LinkButton href="/posts">
+        Ver todos
+        <svg xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+          ></path>
+        </svg>
+      </LinkButton>
     </section>
   </main>
-
-  <Footer />
 </Layout>
+
+<Footer />
 
 <style>
   /* ===== Hero Section ===== */
-  #main-content { @apply after:content-[''] after:block after:bg-[url('../assets/images/hand.webp')] after:w-32 after:h-96 after:absolute after:bg-contain after:bg-no-repeat after:right-0 after:bottom-0; }
-  #hero { @apply pt-8 pb-6; }
-  #hero h1 { @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl; }
-  #hero .rss-link { @apply mb-6; }
-  #hero .rss-icon { @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125; }
-  #hero p { @apply my-2; }
-  .social-wrapper { @apply mt-4 flex flex-col sm:flex-row sm:items-center; }
+  #main-content {
+    @apply after:absolute after:bottom-0 after:right-0 after:block after:h-96 after:w-32 after:bg-[url('../assets/images/hand.webp')] after:bg-contain after:bg-no-repeat after:content-[''];
+  }
+  #hero {
+    @apply pb-6 pt-8;
+  }
+  #hero h1 {
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+  }
+  #hero .rss-link {
+    @apply mb-6;
+  }
+  #hero .rss-icon {
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+  }
+  #hero p {
+    @apply my-2;
+  }
+  .social-wrapper {
+    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+  }
   /* ===== Services & Recent Posts Sections ===== */
-  #services .lista { @apply grid grid-cols-1 sm:grid-cols-3 gap-5 justify-items-center my-6 }
-  #services, #skills,
-  #recent-posts { @apply pt-12 pb-6; }
-  #services h2, #skills h2,
-  #recent-posts h2 { @apply text-2xl font-semibold tracking-wide; }
-  .all-posts-btn-wrapper { @apply my-8 text-center; }
+  #services .lista {
+    @apply my-6 grid grid-cols-1 justify-items-center gap-5 sm:grid-cols-3;
+  }
+  #services,
+  #skills,
+  #recent-posts {
+    @apply pb-6 pt-12;
+  }
+  #services h2,
+  #skills h2,
+  #recent-posts h2 {
+    @apply text-2xl font-semibold tracking-wide;
+  }
+  .all-posts-btn-wrapper {
+    @apply my-8 text-center;
+  }
 </style>

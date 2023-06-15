@@ -71,12 +71,18 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <a href="/proyectos" class={activeNav === "proyectos" ? "active" : ""}>
+            <a
+              href="/proyectos"
+              class={activeNav === "proyectos" ? "active" : ""}
+            >
               Proyectos
             </a>
           </li>
           <li>
-            <a href="/sobre-mi" class={activeNav === "sobre-mi" ? "active" : ""}>
+            <a
+              href="/sobre-mi"
+              class={activeNav === "sobre-mi" ? "active" : ""}
+            >
               Sobre mi
             </a>
           </li>
@@ -125,26 +131,67 @@ const { activeNav } = Astro.props;
 </header>
 
 <style>
-  #skip-to-content { @apply absolute -top-full left-16 z-50 bg-skin-accent py-2 px-3 text-skin-inverted transition-all focus:top-4; }
-  .nav-container { @apply mx-auto flex flex-col items-center justify-between sm:flex-row max-w-6xl; }
-  .top-nav-wrap { @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8; }
-  .bg-logo {  @apply relative before:content-[''] before:absolute before:w-14 before:h-12 before:backdrop-blur-sm before:bg-[#fff]/10 before:z-0 before:rounded-md before:left-0 before:top-[-8px] before:rotate-6; }
-  .bg-logo .logo { @apply px-2 py-1 ms-1 bg-gradient-to-r from-blue-800 to-pink-500 text-[#fff] text-xl rounded-md font-semibold sm:text-2xl z-10 relative; }
-  .hamburger-menu { @apply self-end p-2 sm:hidden; }
-  .hamburger-menu svg { @apply h-6 w-6 scale-125 fill-skin-base; }
-  nav { @apply flex w-full flex-col items-center bg-skin-fill sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0; }
-  nav ul { @apply mt-4 grid w-60 md:w-max grid-cols-2 grid-rows-4 gap-y-2 gap-x-2 sm:mt-0 sm:ml-0 sm:w-auto sm:gap-y-0 sm:gap-x-5; }
-  nav ul li { @apply col-span-2 flex items-center justify-center; } 
-  nav ul li a { @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent sm:my-0 sm:px-2 sm:py-1; }
-  nav ul li:nth-child(4) a { @apply w-auto; }
+  #skip-to-content {
+    @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
+  }
+  .nav-container {
+    @apply mx-auto flex max-w-6xl flex-col items-center justify-between sm:flex-row;
+  }
+  .top-nav-wrap {
+    @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
+  }
+  html[data-theme="dark"] .bg-logo {
+    @apply relative before:absolute before:left-0 before:top-[-8px] before:z-0 before:h-12 before:w-14 before:rotate-6 before:rounded-md before:bg-[#fff]/10 before:backdrop-blur-sm before:content-[''];
+  }
+  html[data-theme="light"] .bg-logo {
+    @apply relative before:absolute before:left-0 before:top-[-8px] before:z-0 before:h-12 before:w-14 before:rotate-6 before:rounded-md before:bg-[#000]/20 before:backdrop-blur-sm before:content-[''];
+  }
+  .bg-logo .logo {
+    @apply relative z-10 ms-1 rounded-md bg-gradient-to-r from-blue-800 to-pink-500 px-2 py-1 text-xl font-semibold text-[#fff] sm:text-2xl;
+  }
+  .hamburger-menu {
+    @apply self-end p-2 sm:hidden;
+  }
+  .hamburger-menu svg {
+    @apply h-6 w-6 scale-125 fill-skin-base;
+  }
+  nav {
+    @apply flex w-full flex-col items-center bg-skin-fill sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
+  }
+  nav ul {
+    @apply mt-4 grid w-60 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0 md:w-max;
+  }
+  nav ul li {
+    @apply col-span-2 flex items-center justify-center;
+  }
+  nav ul li a {
+    @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent sm:my-0 sm:px-2 sm:py-1;
+  }
+  nav ul li:nth-child(4) a {
+    @apply w-auto;
+  }
   nav ul li:nth-child(5),
-  nav ul li:nth-child(6) { @apply col-span-1; }
-  nav a.active { @apply underline decoration-solid decoration-2 underline-offset-4; }
-  nav a.active svg { @apply fill-skin-accent;  }
-  nav button { @apply p-1; }
-  nav button svg { @apply h-6 w-6 fill-skin-base hover:fill-skin-accent; }
-  #theme-btn { @apply p-3 sm:p-1; }
-  #theme-btn svg { @apply scale-125 hover:rotate-12 sm:scale-100; }
+  nav ul li:nth-child(6) {
+    @apply col-span-1;
+  }
+  nav a.active {
+    @apply underline decoration-solid decoration-2 underline-offset-4;
+  }
+  nav a.active svg {
+    @apply fill-skin-accent;
+  }
+  nav button {
+    @apply p-1;
+  }
+  nav button svg {
+    @apply h-6 w-6 fill-skin-base hover:fill-skin-accent;
+  }
+  #theme-btn {
+    @apply p-3 sm:p-1;
+  }
+  #theme-btn svg {
+    @apply scale-125 hover:rotate-12 sm:scale-100;
+  }
 
   .menu-icon line {
     @apply transition-opacity duration-75 ease-in-out;

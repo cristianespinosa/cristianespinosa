@@ -4,13 +4,15 @@ pubDatetime: 2023-06-14T11:27:52.737Z
 title: ¡Bienvenidos a mi blog de desarrollo web!
 postSlug: bienvenidos-blog-desarrollo-web
 featured: true
-ogImage: ""
+ogImage: "/assets/images/desarrollo_web.webp"
 tags:
   - desarrollo web
 description: En este espacio virtual, encontrarás todo lo que necesitas saber sobre el fascinante mundo del desarrollo web.
 ---
 
 En este espacio virtual, encontrarás todo lo que necesitas saber sobre el fascinante mundo del **desarrollo web**. Desde conceptos básicos hasta técnicas avanzadas, estaré compartiendo conocimientos, consejos y recursos para ayudarte a convertirte en un experto en esta emocionante disciplina.
+
+![Desarrollo Web](/assets/images/desarrollo_web.webp)
 
 Primero quiero invitarte a iniciar en un viaje de aprendizaje y descubrimiento. El **desarrollo web** es una de las habilidades más demandadas en la actualidad, ya que internet se ha convertido en una parte fundamental de nuestras vidas. Aquí exploraremos el arte de crear sitios web atractivos, funcionales y eficientes que cautiven a los usuarios y cumplan con sus necesidades.
 
