@@ -8,8 +8,53 @@ import { SITE } from "@config";
 
 <Layout title={`Sobre mi | ${SITE.title}`}>
   <Header activeNav="sobre-mi" />
-  <Main pageTitle="Sobre Mi" pageDesc="Todo acerca de Cristian Espionosa - Ddesarrollador web.">
-
+  <Main
+    pageTitle="Sobre Mi"
+    pageDesc="Todo acerca de Cristian Espionosa - Desarrollador web."
+  >
+    <section class="sobremi p-0">
+      <p>
+        Soy <strong>Cristian Espinosa</strong>, ingeniero en sistemas con mas de
+        10 años de experiencia en el desarrollador web, nací en Santo Domingo de
+        los Tsáchilas pero vivo en Quito - Ecuador ahora, me apasiona crear
+        grandes experiencias de usuario con la tecnología web, me especializo en <strong
+          >NodeJS, PHP, Wordpress y ReactJs</strong
+        >, y también tengo una amplia experiencia como ddesarrollador FullStack.
+      </p>
+      <p>
+        Me encanta escribir código y resolver problemas con mucha atención a los
+        detalles y un entendimiento del diseño de interacción y aplicar las
+        mejores prácticas de desarrollo, espero ahora mediante esta página
+        escribir tutoriales o cosas de interés sobre programación.
+      </p>
+      <p>
+        Fanático del fútbol, y me gustan las actividades al aire libre, los
+        videojuegos y, por supuesto, la programación. Interesado en todo el
+        espectro del frontend y al backend, tambiñen trabajar en proyectos
+        ambiciosos con personas interesantes."
+      </p>
+      <h2>Ponte en contacto</h2>
+      <p>
+        Gracias por leer un poco sobre mí. Siempre estoy feliz de chatear y
+        brindar cualquier consejo útil que pueda, escribeme a mi correo si
+        necesitas algún proyecto.
+        <a href="mailto:cristian.espinosah@gmail.com" target="_blank">
+          <span class="texto"> AQUÍ</span>
+        </a>
+      </p>
+    </section>
   </Main>
   <Footer />
 </Layout>
+
+<style>
+  .sobremi p {
+    @apply my-5;
+  }
+  .sobremi h2 {
+    @apply text-2xl font-bold;
+  }
+  .sobremi a {
+    @apply font-bold text-skin-accent;
+  }
+</style>

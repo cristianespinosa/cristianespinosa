@@ -14,7 +14,7 @@ import { SOCIALS, SITE } from "@config";
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+//const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -57,7 +57,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <section id="services">
       <h2>Servicios</h2>
       <div class="lista">
-        <div class="web">
+        <div class="web card">
           <img
             src="/assets/iconos/tablet.png"
             alt="Desarrollo de siitos web responsive"
@@ -65,7 +65,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           />
           <h3>Desarrollo web</h3>
         </div>
-        <div class="apps">
+        <div class="apps card">
           <img
             src="/assets/iconos/computer.png"
             alt="Desarrollo de sistemas y aplicaciones web personalizadas"
@@ -73,7 +73,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           />
           <h3>Sistemas personalizados</h3>
         </div>
-        <div class="seo">
+        <div class="seo card">
           <img
             src="/assets/iconos/rocket.png"
             alt="Optimización de sitios web - SEO"
@@ -81,6 +81,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           />
           <h3>Optimización web</h3>
         </div>
+        <div class="seo card"></div>
       </div>
     </section>
 
@@ -143,7 +144,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   /* ===== Services & Recent Posts Sections ===== */
   #services .lista {
-    @apply my-6 grid grid-cols-1 justify-items-center gap-5 sm:grid-cols-3;
+    @apply my-6 grid grid-cols-1 justify-items-center gap-5 sm:grid-cols-4;
+  }
+  #services .lista .card {
+    @apply w-full rounded p-5 text-center;
+  }
+  html[data-theme="light"] #services .lista .card {
+    background-color: rgba(39, 46, 65, 0.03);
+  }
+  html[data-theme="dark"] #services .lista .card {
+    background-color: rgba(39, 46, 65, 0.4);
   }
   #services,
   #skills,
