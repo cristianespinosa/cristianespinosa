@@ -141,10 +141,10 @@ const { activeNav } = Astro.props;
     @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
   }
   html[data-theme="dark"] .bg-logo {
-    @apply relative before:absolute before:left-0 before:top-[-8px] before:z-0 before:h-12 before:w-14 before:rotate-6 before:rounded-md before:bg-[#fff]/10 before:backdrop-blur-sm before:content-[''];
+    @apply relative before:absolute before:left-[-2px] before:top-[-10px] before:z-0 before:h-12 before:w-14 before:rotate-6 before:rounded-md before:bg-[#fff]/10 before:backdrop-blur-sm before:content-[''] md:before:left-0 md:before:top-[-8px];
   }
   html[data-theme="light"] .bg-logo {
-    @apply relative before:absolute before:left-0 before:top-[-8px] before:z-0 before:h-12 before:w-14 before:rotate-6 before:rounded-md before:bg-[#000]/20 before:backdrop-blur-sm before:content-[''];
+    @apply relative before:absolute before:left-[-2px] before:top-[-10px] before:z-0 before:h-12 before:w-14 before:rotate-6 before:rounded-md before:bg-[#000]/20 before:backdrop-blur-sm before:content-[''] md:before:left-0 md:before:top-[-8px];
   }
   .bg-logo .logo {
     @apply relative z-10 ms-1 rounded-md bg-gradient-to-r from-blue-800 to-pink-500 px-2 py-1 text-xl font-semibold text-[#fff] sm:text-2xl;
