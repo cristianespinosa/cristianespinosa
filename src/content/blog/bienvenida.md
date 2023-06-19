@@ -8,7 +8,7 @@ ogImage: "/assets/images/desarrollo_web.webp"
 tags:
   - desarrollo web
 description: En este espacio virtual, encontrarás todo lo que necesitas saber sobre el fascinante mundo del desarrollo web.
-draft: false,
+draft: false
 category: Desarrollo web
 ---
 
