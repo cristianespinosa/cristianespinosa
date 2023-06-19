@@ -8,6 +8,8 @@ ogImage: "/assets/images/desarrollo_web.webp"
 tags:
   - desarrollo web
 description: En este espacio virtual, encontrarás todo lo que necesitas saber sobre el fascinante mundo del desarrollo web.
+draft: false,
+category: Desarrollo web
 ---
 
 En este espacio virtual, encontrarás todo lo que necesitas saber sobre el fascinante mundo del **desarrollo web**. Desde conceptos básicos hasta técnicas avanzadas, estaré compartiendo conocimientos, consejos y recursos para ayudarte a convertirte en un experto en esta emocionante disciplina.
