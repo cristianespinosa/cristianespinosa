@@ -6,6 +6,7 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
+import Stack from "@components/home/Stack.astro";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
@@ -94,6 +95,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <section id="skills">
       <h2>Stack de desarrollo</h2>
+      <Stack />
     </section>
 
     <section id="recent-posts">
@@ -114,8 +116,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </ul>
       <LinkButton href="/posts">
         Ver todos
-        <svg xmlns="http://www.w3.org/2000/svg"
-          ><path
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path
             d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
           ></path>
         </svg>
@@ -129,7 +131,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #main-content {
-    @apply after:absolute after:bottom-0 after:right-0 after:block after:h-96 after:w-32 after:bg-[url('../assets/images/hand.webp')] after:bg-contain after:bg-no-repeat after:content-[''];
+    @apply after:absolute after:bottom-0 after:right-0 after:block after:h-48 after:w-24 after:bg-[url('../assets/images/hand.webp')] after:bg-contain after:bg-no-repeat after:content-[''] md:after:h-96 md:after:w-32;
   }
   #hero {
     @apply pb-6 pt-8;
