@@ -52,9 +52,12 @@ También puedes añadir fuentes de Google Fonts utilizando la etiqueta `@import`
    }
 <style>
 ```
+2. Aplica la propiedad font-family en tu código CSS tal y como se ha especificado en Google Fonts.
 
 ## Uso en Wordpress
    
 Es importante tener en cuenta que si modificas la fuente directamente en el tema de WordPress, perderás los cambios en la hoja de estilos si el tema se actualiza. Por lo tanto, se recomienda crear un tema hijo para hacer modificaciones personalizadas de la fuente.
+
+Recuerda que Google Fonts es una herramienta útil para mejorar el diseño y la experiencia de usuario de tus páginas web, ya que ofrece una amplia variedad de tipografías de alta calidad y es fácil de usar y compatible con la mayoría de los navegadores y dispositivos.
 
 
